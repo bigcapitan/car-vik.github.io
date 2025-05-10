@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car-Vik</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./img/Логотип.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="./img/Логотип.png" alt="Logo">
+                <h1>Car-Vik</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="../index.html">Главная</a></li>
+                    <li><a href="#xaractictics">О машине</a></li>
+                    <li><a href="#comments">Отзыв</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<section id="start" class="start">
+    <div class="start__container">
+        <h1>Toyota Mark II</h1>
+        <p>четырёхдверный среднеразмерный седан, выпускавшийся компанией Toyota с 1968 по 2004 годы. Наименование Mark II использовалось компанией Toyota на протяжении нескольких десятилетий и первоначально использовалось в составе названия Toyota Corona Mark II.</p>
+    
+    <section class="slider">
+        <div class="slider__container">
+            <div class="slider__wrapper">
+                <div class="slider__item"><img src="./img/2a99bd9s-960.jpg" alt="Slide 1"></div>
+                <div class="slider__item"><img src="./img/3MAAAgLNquA-960.jpg" alt="Slide 2"></div>
+                <div class="slider__item"><img src="./img/4b8a0aes-960.jpg" alt="Slide 3"></div>
+                <div class="slider__item"><img src="./img/774b1ees-960.jpg" alt="Slide 4"></div>
+                <div class="slider__item"><img src="./img/dc9def6s-960.jpg" alt="Slide 5"></div>
+            </div>
+            <button class="slider__arrow slider__arrow--prev">&#10094;</button>
+            <button class="slider__arrow slider__arrow--next">&#10095;</button>
+        </div>
+    </section>
+    <button class="#xaractictics">узнать больше</button>
+    </div>
+</section>
+
+<section id="xaractictics" class="xaractictics">
+    <div class="xaractic__container">
+        <h2>Технические характеристики</h2>
+        <table class="xaractic__table">
+            <tr>
+                <th>Параметр</th>
+                <th>Значение</th>
+            </tr>
+            <tr>
+                <td>Двигатель</td>
+                <td> 1JZ и 2JZ</td>
+            </tr>
+            <tr>
+                <td>Мощность</td>
+                <td>72 до 280</td>
+            </tr>
+            <tr>
+                <td>Крутящий момент</td>
+                <td>4600 об/мин.</td>
+            </tr>
+            <tr>
+                <td>Разгон 0-100 км/ч</td>
+                <td> 6,5 секунды. </td>
+            </tr>
+            <tr>
+                <td>Максимальная скорость</td>
+                <td>180 км/ч. </td>
+            </tr>
+        </table>
+    </div>
+</section>
+
+<section id="fotogallery" class="fotogallery">
+    <div class="fotogallery__container">
+        <h2>Галерея</h2>
+        <div class="fotogallery__images">
+            <img src="./img/cgAAAgHNquA-1920.jpg" alt="Image 1">
+            <img src="./img/галерея 2.jpg" alt="Image 2">
+            <img src="./img/галерея 3.jpg" alt="Image 3">
+            <img src="./img/галерея 4.jpg" alt="Image 4">
+            <img src="./img/галерея 5.jpg" alt="Image 5">
+            <img src="./img/галерея 6.jpg" alt="Image 6">
+            <img src="./img/галерея 7.webp" alt="Image 7">
+            <img src="./img/галерея 8.webp" alt="Image 8">
+            <img src="./img/галерея 9.jpg" alt="Image 9">
+        </div>
+    </div>
+</section>
+
+<section id="video" class="video">
+    <div class="video__container">
+        <h2>Видео</h2>
+        <div class="video__row">
+            <div class="video__item">
+                <iframe src="https://www.youtube.com/embed/i9koDoB_MNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3>Toyota Mark II JZX 90</h3>
+            </div>
+            <div class="video__item">
+                <iframe src="https://www.youtube.com/embed/HWQEd3v_-Vc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3>Toyota Mark II JZX 100</h3>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<section id="comments" class="comments">
+    <div class="comments__container">
+        <h2>Оставьте отзыв про машину</h2>
+        <form id="commentsForm" class="comments__form">
+            <div class="form__group">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+            </div>
+            <div class="form__group">
+                <label for="surname">Фамилия:</label>
+                <input type="text" id="surname" name="surname" placeholder="Введите вашу фамилию" required>
+            </div>
+            <div class="form__group">
+                <label for="email">Почта:</label>
+                <input type="email" id="email" name="email" placeholder="Введите вашу почту" required>
+            </div>
+            <div class="form__group">
+                <label for="review">Отзыв:</label>
+                <textarea id="review" name="review" rows="5" placeholder="Напишите ваш отзыв" required></textarea>
+            </div>
+            <button type="button" id="submitButton" class="form__button">Отправить</button>
+        </form>
+        <p id="thankYouMessage" class="thank-you-message" style="display: none;">Спасибо за ваш отзыв!</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer__container">
+        <ul class="footer__links">
+            <li><a href="#start">Главная</a></li>
+            <li><a href="#xaractictics">Характеристики</a></li>
+            <li><a href="#fotogallery">Галерея</a></li>
+            <li><a href="#video">Видео</a></li>
+            <li><a href="#comments">Отзывы</a></li>
+        </ul>
+        <div class="footer__logo">
+            <img src="./img/Логотип.png" alt="Логотип Toyota Mark II">
+        </div>
+        <div class="footer__social">
+            <a href="https://www.instagram.com/bolshoikapitan/" target="_blank" class="social__link">
+                <img src="./img/instagram (5).png" alt="Instagram"> Instagram
+            </a>
+            <a href="https://t.me/gonaynasamocate" target="_blank" class="social__link">
+                <img src="./img/telegram (5).png" alt="Telegram"> Telegram
+            </a>
+            <a href="https://github.com/bigcapitan" target="_blank" class="social__link">
+                <img src="./img/icons8-github-32.png" alt="GitHub"> GitHub
+            </a>
+        </div>
+        <p class="footer__copyright">© 2025 Toyota Mark II. Все права защищены.</p>
+    </div>
+</footer>
+
+</body>
+<script src="./script.js"></script>
+</html>
